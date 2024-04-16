@@ -26,8 +26,8 @@ export default function Accordian() {
   return (
     <div className="acc-wrapper">
       <button onClick={() => setEnableMultiSelection(!enableMultiSelection)}>
-        Enable Multi Selection
-      </button>
+  {enableMultiSelection ? "Enable Single Selection" : "Enable Multi Selection"}
+</button>
       <div className="accordian">
         {data && data.length > 0 ? (
           data.map((dataItem) => (
