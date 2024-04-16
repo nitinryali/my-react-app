@@ -23,11 +23,12 @@ export default function Accordian() {
   }
 
   console.log(selected, multiple);
-  return (
-    <div className="acc-wrapper">
-      <button onClick={() => setEnableMultiSelection(!enableMultiSelection)}>
-  {enableMultiSelection ? "Enable Single Selection" : "Enable Multi Selection"}
-</button>
+  return (  
+      <div className="acc-wrapper">
+      <button onClick={() => setEnableMultiSelection(!enableMultiSelection)} className="btn-toggle">
+        {enableMultiSelection ? "Enable Single Selection" : "Enable Multi Selection"}
+      </button>
+
       <div className="accordian">
         {data && data.length > 0 ? (
           data.map((dataItem) => (
