@@ -6,6 +6,7 @@ import ImageSlider from "./components/image-slider";
 import QRCodeGenerator from "./components/qr-code";
 import LightDarkMode from "./components/Toggle-theme";
 import Scroll from "./components/Custom-scroll";
+import Tictac from "./components/tic-tac-toe";
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
       <QRCodeGenerator/>
       <LightDarkMode/>
       <Scroll url={"https://dummyjson.com/products?limit=100"}/>
+      <Tictac/>
     </div>
    );
   }
