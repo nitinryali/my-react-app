@@ -38,7 +38,8 @@ export default function RandomColor() {
         width: "100vw",
         height: "60vh",
         background: color,
-        
+        marginBottom:"10px",
+        paddingBottom:"10px",
       }}
     >
     <div
@@ -64,14 +65,14 @@ export default function RandomColor() {
     </div>
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
+          display:"flex",
+          justifyContent:"center",
           alignItems: "center",
-          color: "#fff",
-          fontSize: "30px",
-          marginTop: "10px",
-          flexDirection  :'column',
-          gap :'10px'
+          color:"#fff",
+          fontSize:"23px",
+          marginTop:"5px",
+          flexDirection:'column',
+          gap :'3px'
         }}
       >
         <h3 >{typeOfColor === "rgb" ? "RGB Color" : "HEX Color"}</h3>
